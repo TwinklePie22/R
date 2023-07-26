@@ -1,29 +1,20 @@
-countDivisors <- function(num) {
-  num <- as.integer(num)
+count_divisors <- function(num) {
+  divisors <- c()  # To store the divisors
+  count <- 0       # To keep track of the count of divisors
   
-  if (is.na(num) || num <= 1) {
-    cat("Please provide a valid integer greater than 1.\n")
-    return()
-  }
+  cat("Given Integer:", num, "\n")
   
-  # Print the given integer
-  cat("The given integer is:", num, "\n")
-  
-  divisorCount <- 0
-  divisors <- c()
-  
-  # Find divisors
-  for (i in 2:(num / 2)) {
+  for (i in 2:(num - 1)) {
     if (num %% i == 0) {
-      divisorCount <- divisorCount + 1
       divisors <- c(divisors, i)
+      count <- count + 1
     }
   }
   
-  # Print divisors and count
-  cat("Divisors:", paste(divisors, collapse = " "), "\n")
-  cat("Number of Divisors:", divisorCount, "\n")
+  cat("Divisors:", divisors, "\n")
+  cat("Number of divisors (excluding 1 and itself):", count, "\n")
 }
 
 # Example usage:
-countDivisors(12)
+num <- 30
+count_divisors(num)
