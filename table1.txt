@@ -1,4 +1,4 @@
-Ram		    30		177		57		M
+Ram		  30		177		57		M
 Alwin		35		164		48		F
 Billy		28		155		45		M
 Amera		16		168		60		F
