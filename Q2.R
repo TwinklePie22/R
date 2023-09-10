@@ -13,17 +13,6 @@ df$Gender <- as.factor(df$Gender)
 df
 
 #2b
-# # Create the initial data frame
-# Name <- c("Ram", "Alwin", "Billy", "Amera", "Olive", "Dora")
-# Age <- c(30, 35, 22, 16, 42, 59)
-# Height <- c(177, 164, 155, 180, 124, 150)
-# Weight <- c(57, 48, 45, 60, 52, 55)
-# Gender <- as.character(c("M", "F", "M", "F", "F", "F"))
-# df <- data.frame(Name, Age, Height, Weight, Gender, stringsAsFactors = FALSE)
-# df
-# # Invert gender for all individuals
-# df$Gender <- ifelse(df$Gender == "M", "F", "M")
-# df
 # Create the new data frame
 Working <- c("Y", "N", "Y", "N", "Y", "N")
 df2 <- data.frame(Working, stringsAsFactors = FALSE)
