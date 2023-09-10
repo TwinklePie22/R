@@ -22,5 +22,5 @@ cumprod_A <- cumprod(A) # Cumulative product of A
 
 # Print the results
 cat("Repeated A:", rep_A, "\n")
-cat("Pasted  A and B together :", paste_A_B, "\n")
+cat("Pasted values of A and B together :", paste_A_B, "\n")
 cat("Cumulative product of A:", cumprod_A, "\n")
