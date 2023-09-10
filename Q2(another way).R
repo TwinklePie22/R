@@ -22,7 +22,6 @@ print(data)
 #2b
 # Create the new data frame
 working_data <- data.frame(
-  Name = c("Ram", "Alwin", "Billy", "Amera", "Olive", "Dora"),
   Working = c("Y", "N", "Y", "N", "Y", "N"),
   stringsAsFactors = FALSE  # Ensure "Working" is treated as character, not factor
 )
