@@ -16,7 +16,8 @@ print(df)
 
 # Replace all occurrences of "A" with NA in the "Grade" column
 modified_df <- replaceValueWithNA(df, "A")
+#modified_df <- replace(df, df == "A", NA)
 
 # Print the modified data frame
-print("\nData frame with 'A' replaced with NA:")
+cat("\nData frame with 'A' replaced with NA:\n")
 print(modified_df)
