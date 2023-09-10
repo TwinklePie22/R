@@ -1,5 +1,5 @@
 # Define the function to replace a value with NA in a data frame
-replaceValueWithNA <- function(df, value_to_replace) {
+replacable_df <- function(df, value_to_replace) {
   # Convert the value to replace to NA if it matches any element in the data frame
   df[df == value_to_replace] <- NA
   return(df)
@@ -15,7 +15,7 @@ print("Original data frame:")
 print(df)
 
 # Replace all occurrences of "A" with NA in the "Grade" column
-modified_df <- replaceValueWithNA(df, "A")
+modified_df <- replacable_df(df, "A")
 #modified_df <- replace(df, df == "A", NA)
 
 # Print the modified data frame
