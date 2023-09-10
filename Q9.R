@@ -1,8 +1,17 @@
 # Load the mtcars dataset
 data(mtcars)
-# Plot Miles/(US) gallon versus Rear axle ratio as a line plot
-plot(mtcars$mpg, mtcars$drat, main = "Miles/(US) gallon versus Rear axle ratio",
-xlab = "Miles/(US) gallon", ylab = "Rear axle ratio")
-# Change the visualization to a scatter plot
-plot(mtcars$mpg, mtcars$drat, main = "Miles/(US) gallon versus Rear axle ratio (Scatter Plot)",
-xlab = "Miles/(US) gallon", ylab = "Rear axle ratio", type = "p")
+#9a
+# Create a scatter plot of mpg versus drat
+plot(mtcars$mpg, mtcars$drat,
+     xlab = "Miles/(US) gallon",
+     ylab = "Rear axle ratio",
+     main = "Miles/(US) gallon vs Rear axle ratio")
+#9b
+# Create a scatter plot with customized point color and size
+plot(mtcars$mpg, mtcars$drat,
+     xlab = "Miles/(US) gallon",
+     ylab = "Rear axle ratio",
+     main = "Scatterplot: Miles/(US) gallon vs Rear axle ratio",
+     col = "red", 
+     pch = 16, 
+     cex = 2)
