@@ -1,3 +1,4 @@
+#A
 class(state.x77)
 s77 <- data.frame(state.x77)
 class(s77)
