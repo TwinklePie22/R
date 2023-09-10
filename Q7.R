@@ -1,5 +1,5 @@
 #7a
-contents <- read.table("table.txt", header = TRUE, sep = "\t")
+contents <- read.table("table.txt", header = TRUE)
 # contents <- read.table(file_path, header = TRUE, sep = "\t", na.strings = c("--", "*", "**"))
 print(contents)
 
