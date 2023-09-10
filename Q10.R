@@ -1,8 +1,11 @@
 # Load the mtcars dataset
 data(mtcars)
-#10a
+#!0a
 # Select four different continuous variables from the mtcars dataset
 selected_vars <- c("mpg", "disp", "hp", "wt")
+
+# Set up a single plot
+#par(mfrow = c(1, 1))
 
 # Define colors and line widths for each variable
 colors <- c("blue", "green", "red", "orange")
