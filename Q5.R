@@ -14,5 +14,5 @@ count_divisors <- function(num) {
 }
 
 # Example usage:
-num <- 30
-count_divisors(num)
+n <- 30
+count_divisors(n)
