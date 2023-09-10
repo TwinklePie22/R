@@ -24,6 +24,11 @@ new.df <- new.df[, -c(4, 6, 7, 9, 10)]
 new.df$Illiteracy.Levels <- ifelse(new.df$Illiteracy >= 0 & new.df$Illiteracy < 1, "Low",
                                    ifelse(new.df$Illiteracy >= 1 & new.df$Illiteracy < 2, "Some", "High"))
 
-# G
 x <- subset(new.df, state.region == "West" & Illiteracy.Levels == "Low")
 cat("State in the West with low illiteracy and highest income:", row.names(x[which.max(x$Income),]), "\n")
+# g
+#Rename the column "state.region" to show only the first 3 letters
+colnames(state.x77)[colnames(state.x77) == "state.region"] <- "Reg"
+
+# Print the modified data frame
+head(state.x77)
