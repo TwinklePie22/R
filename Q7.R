@@ -1,6 +1,6 @@
 #7a
 file_path <- "table.txt"
-contents <- read.delim(file_path, header = TRUE, sep = "\t")
+contents <- read.table(file_path, header = TRUE, sep = "\t")
 print(contents)
 
 #7b
