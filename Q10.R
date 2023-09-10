@@ -1,6 +1,6 @@
 # Load the mtcars dataset
 data(mtcars)
-#!0a
+#10a
 # Select four different continuous variables from the mtcars dataset
 selected_vars <- c("mpg", "disp", "hp", "wt")
 
