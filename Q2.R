@@ -7,12 +7,12 @@ Weight <- c(57, 48, 45, 60, 52, 55)
 Gender <- as.factor(c("M", "F", "M", "F", "F", "F"))
 df <- data.frame(Name, Age, Height, Weight, Gender)
 print("Original data frame: ")
-df  #or print(df)
+print(df)
 # Invert gender for all individuals
 levels(df$Gender) <- c("M", "F")
 df$Gender <- as.factor(df$Gender)
 print("Data frame with inverted genders: ")
-df  #or print(df)
+print(df)
 
 #2b
 # Create the new data frame
@@ -21,12 +21,12 @@ df2 <- data.frame(Working, stringsAsFactors = FALSE)
 # Add the new data frame to the previous one
 df <- cbind(df, df2)
 # Print the modified data frame
-df  #or print(df)
+print(df)
 # Print the number of rows and columns
 cat("Number of rows:", nrow(df), "\n")
 cat("Number of columns:", ncol(df), "\n")
 # Print the class of data in each column
 cat("Class of data in each column:\n")
 for (col in names(df)) {
-  cat(paste(col, ":", class(df[[col]]), "\n"))
+  cat(col, ":", class(df[[col]]), "\n")
 }
