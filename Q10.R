@@ -17,7 +17,7 @@ for (i in seq_along(selected_vars)) {  # Use seq_along instead of 1:length
   col <- colors[i]
   lwd <- line_widths[i]
   
-  plot(mtcars[, var], type = "n", xlab = "Index", ylab = var, main = paste("Line and Points Plot of", var))
+  plot(mtcars[, var], xlab = "Index", ylab = var, main = paste("Line and Points Plot of", var))
   lines(mtcars[, var], col = col, lwd = lwd)
   points(mtcars[, var], col = col, pch = 16)
 }
@@ -30,8 +30,8 @@ for (i in seq_along(highlight_vars)) {  # Use seq_along instead of 1:length
   var <- highlight_vars[i]
   col <- highlight_colors[i]
   
-  plot(mtcars[, var], type = "n", xlab = "Index", ylab = var, main = paste("Line and Points Plot of", var))
+  plot(mtcars[, var]
+       , xlab = "Index", ylab = var, main = paste("Line and Points Plot of", var))
   lines(mtcars[, var], col = col, lwd = 2)
   points(mtcars[, var], col = col, pch = 16)
-  
 }
