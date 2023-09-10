@@ -21,7 +21,7 @@ df2 <- data.frame(Working, stringsAsFactors = FALSE)
 # Add the new data frame to the previous one
 df <- cbind(df, df2)
 # Print the modified data frame
-df
+df  #or print(df)
 # Print the number of rows and columns
 cat("Number of rows:", nrow(df), "\n")
 cat("Number of columns:", ncol(df), "\n")
