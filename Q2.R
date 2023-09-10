@@ -6,11 +6,11 @@ Height <- c(177, 164, 155, 180, 124, 150)
 Weight <- c(57, 48, 45, 60, 52, 55)
 Gender <- as.factor(c("M", "F", "M", "F", "F", "F"))
 df <- data.frame(Name, Age, Height, Weight, Gender)
-df
+df  #or print(df)
 # Invert gender for all individuals
 levels(df$Gender) <- c("M", "F")
 df$Gender <- as.factor(df$Gender)
-df
+df  #or print(df)
 
 #2b
 # Create the new data frame
