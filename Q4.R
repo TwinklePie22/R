@@ -11,6 +11,7 @@ for (a in 0:2) {
 
 #b
 #skipping 3 and 4
+print("Incrementing i from 2 to 5")
 i <- 2
 while (i <= 5) {
   if (i == 3 || i == 4) {
