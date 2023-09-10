@@ -21,7 +21,7 @@ while (i <= 5) {
   i <- i + 1
 }
 
-#skipping only one number
+# #skipping only one number
 # i <- 2
 # while (i <= 5) {
 #   if (i == 4) {
