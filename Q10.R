@@ -4,8 +4,8 @@ data(mtcars)
 # Select four different continuous variables from the mtcars dataset
 selected_vars <- c("mpg", "disp", "hp", "wt")
 
-# Set up a single plot
-#par(mfrow = c(1, 1))
+# Set up multiple plots
+par(mfrow = c(2, 2))
 
 # Define colors and line widths for each variable
 colors <- c("blue", "green", "red", "orange")
@@ -24,12 +24,14 @@ for (i in seq_along(selected_vars)) {  # Use seq_along instead of 1:length
 #10b
 # Choose one variable from each group and highlight it with a different color
 highlight_vars <- c("mpg", "disp", "hp", "wt")
-highlight_colors <- c("red", "green", "blue", "orange")
+highlight_colors <- c("red", "orange", "blue", "green")
 
 for (i in seq_along(highlight_vars)) {  # Use seq_along instead of 1:length
   var <- highlight_vars[i]
   col <- highlight_colors[i]
   
+  plot(mtcars[, var], type = "n", xlab = "Index", ylab = var, main = paste("Line and Points Plot of", var))
   lines(mtcars[, var], col = col, lwd = 2)
   points(mtcars[, var], col = col, pch = 16)
+  
 }
