@@ -17,10 +17,10 @@ cat("Exponentiation of A and B:", pow_A_B, "\n")
 
 # Apply rep(), paste(), and cumprod() functions on vector A
 rep_A <- rep(A, times = 2) # Repeat A twice
-paste_A_B <- paste(A, sep = "-", B) # Concatenate "A:" with each element of A
+paste_A <- paste("A:" ,A, sep = "-") # Concatenate "A:" with each element of A
 cumprod_A <- cumprod(A) # Cumulative product of A
 
 # Print the results
 cat("Repeated A:", rep_A, "\n")
-cat("Pasted values of A and B together :", paste_A_B, "\n")
+cat("Pasted values of A and B together :", paste_A, "\n")
 cat("Cumulative product of A:", cumprod_A, "\n")
