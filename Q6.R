@@ -11,7 +11,7 @@ df <- data.frame(
   Grade = c("A", "B", "C", "A")
 )
 # Print the original data frame
-print("Original data frame:")
+cat("Original data frame:")
 print(df)
 
 # Replace all occurrences of "A" with NA in the "Grade" column
