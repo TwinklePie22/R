@@ -3,7 +3,7 @@ count_divisors <- function(num) {
   count <- 0       # To keep track of the count of divisors
   
   cat("Given Integer:", num, "\n")
-  for (i in 1:(num )) {
+  for (i in 1:num ) {
     if (num %% i == 0) {
       divisors <- c(divisors, i)
       count <- count + 1
