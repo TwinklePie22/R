@@ -1,7 +1,8 @@
 # Read the file
-data <- read.table("Table1.txt", header = FALSE)
+data <- read.table("table1.txt", header = FALSE)
 # Set the column names
 colnames(data) <- c("Name", "Age", "Height", "Weight", "Gender")
+print(data)
 # Set the row names to the values in the first column (Name)
 rownames(data) <- data$Name
 # Remove the Name variable
