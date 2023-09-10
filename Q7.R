@@ -6,7 +6,7 @@ print(contents)
 
 #7b
 # Find the missing values:
-print("Missing values:")
+cat("\nMissing values:\n")
 missing_values <- subset(contents, Age == '--' | Height == '*' | Weight == '**')
 # missing_values <- subset(contents, is.na(Age) | is.na(Height) | is.na(Weight))
 print(missing_values)
@@ -17,5 +17,5 @@ numeric_values <- as.numeric(contents$Weight)
 average <- mean(numeric_values, na.rm = TRUE)
 contents$Weight[is.na(numeric_values)] <- average
 
-print("Modified contents:")
+cat("\nModified contents:\n")
 print(contents)
