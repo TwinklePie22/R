@@ -1,12 +1,14 @@
 #7a
 file_path <- "table.txt"
 contents <- read.table(file_path, header = TRUE, sep = "\t")
+# contents <- read.table(file_path, header = TRUE, sep = "\t", na.strings = c("--", "*", "**"))
 print(contents)
 
 #7b
 # Find the missing values:
 print("Missing values:")
 missing_values <- subset(contents, Age == '--' | Height == '*' | Weight == '**')
+# missing_values <- subset(contents, is.na(Age) | is.na(Height) | is.na(Weight))
 print(missing_values)
 
 #7c
